@@ -41,8 +41,8 @@ function ShowGoods() {
 
   if (loading)
     return (
-      <div class="spinner-border text-primary" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div className="spinner-border text-primary" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     );
   if (error) return <p>{error}</p>;
@@ -54,10 +54,10 @@ function ShowGoods() {
             <div key={id} className={styles.item}>
               <h2 className={styles.h2}>{title}</h2>
               <img className={styles.img} src={image} alt="item" />
-              <div class="input-group mb-3">
+              <div className="input-group mb-3">
                 <input
                   type="number"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Quantity"
                   aria-label="Quantity"
                   aria-describedby="button-addon2"
@@ -65,7 +65,7 @@ function ShowGoods() {
                   defaultValue={"1"}
                 />
                 <button
-                  class="btn btn-outline-secondary"
+                  className="btn btn-outline-secondary"
                   type="button"
                   id="button-addon2"
                   onClick={addItem}

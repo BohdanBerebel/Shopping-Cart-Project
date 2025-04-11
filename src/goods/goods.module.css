@@ -49,3 +49,12 @@
   align-items: end;
   justify-content: center;
 }
+
+@media (max-width: 500px) {
+  .item {
+    max-width: 80%;
+  }
+  .showcase {
+    justify-items: center;
+  }
+}

@@ -64,3 +64,26 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 500px) {
+  header {
+    min-height: auto;
+  }
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  a {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .img {
+    max-width: 80%;
+  }
+}
